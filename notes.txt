@@ -1,0 +1,21 @@
+rake routes 
+<%%> execute ruby code
+<%= %> execute ruby code and echo or puts
+<%= link_to <CONTENT_TO_HREF> , <PATH> %>
+example :
+
+<%= 
+    link_to @post.title or "test",
+    post or new_post_path 
+%>
+
+
+layout 
+<%= yield :post_title %> // set the placeholder to variable
+view file
+<%= content_for :page_title, "Index"%>
+
+controller
+
+render '<NameOfTheMethodOrNameOfTheViewTemplate>'
+
